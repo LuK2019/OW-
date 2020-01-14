@@ -7,7 +7,7 @@ import scipy
 class SABR:
 
     @staticmethod
-    def fit(objective, initial_guess: Tuple[float, float, float, float], beta: float, fwds: np.array, expiries: np.array, strike_matrix: np.array, vola_matrix: np.array, eps=0.0001) -> np.array:
+    def fit(objective, initial_guess: Tuple[float, float, float], beta: float, fwds: np.array, expiries: np.array, strike_matrix: np.array, vola_matrix: np.array, eps=0.0001) -> np.array:
         """For n=len(fwds) options the optimal parameters (alpha, beta, rho, nu) are fitted.
         Args:
             objective: objective function
